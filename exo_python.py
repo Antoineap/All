@@ -7,12 +7,10 @@ def find(name, path):
 			
 			
 v=[1,2,3]
-v.max()
-sort(v)
+max(v)
 v.sort()
-v.last()
 v[-1]
-mean(v)	
+np.mean(v)	
 
 txt = "welcome to the jungle"
 
@@ -20,9 +18,27 @@ x = txt.split()
 
 print(x)
 
+#cosine
+a = np.array([1,2,3])
+b = np.array([1,1,4])
+ 
+# manually compute cosine similarity
+dot = np.dot(a, b)
+norma = np.linalg.norm(a)
+normb = np.linalg.norm(b)
+cos = dot / (norma * normb)
 
-factoriel de n python
 
+#euclidian
+dist = numpy.linalg.norm(a-b)
+
+#factoriel de n python
+def fact(n):
+    """fact(n): calcule la factorielle de n (entier >= 0)"""
+    if n<2:
+        return 1
+    else:
+        return n*fact(n-1)
 
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
